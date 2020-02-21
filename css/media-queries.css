@@ -1,0 +1,15 @@
+@media (max-width: 900px)
+ {
+    .section{
+      
+        grid-template-rows: 1fr 1fr;
+    }
+    .section_form{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .section_services {
+        grid-column: 1;
+        grid-row: 1;
+    }
+}

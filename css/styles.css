@@ -1,0 +1,99 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    }
+.container {
+       display: grid; 
+       height:100vh;
+       overflow: auto;
+       grid-template-rows: 94px 8fr 94px;
+       grid-template-areas: "header"
+                            "section"
+                            "footer";
+       align-self: center;
+    }
+
+.header {
+    margin-top: -24px;
+    height: 94px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    grid-area: header;
+    grid-template-areas: "left right";
+    align-self: center;
+    align-items: center;
+    }
+    .header__right-section {
+        height: 94px;
+        display: flex;
+        width:60px;
+        grid-area: right;
+        align-self: flex-end;
+        justify-self: flex-end;
+        align-items: center;
+      
+        margin-right: 72px;
+    }
+    .header__right-section--inicio {
+        padding: 0%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        margin-left: 8px;
+    }
+    .header__right-section--menu {
+        padding: 0;
+        margin-right: 24px;
+        margin-left: 10px;
+        height: 40px;
+        width: 40px;
+    }
+    .header__left-section {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        grid-area: left;
+    }
+    .header__left-section--logo{
+        padding: 0;
+        width: auto;
+        height: 94px;
+    }
+.section {
+    display: grid;
+    background-color: rgba(0, 115, 255, 0.639);
+    grid-area: section;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "services form" ;
+    }
+    .section_services {
+       
+        background-image: url('https://i.pinimg.com/originals/2d/19/85/2d19853cfc3362a1b09b5cb907936d28.jpg');
+        grid-template-areas: services;
+     
+    }
+    .section_form {
+        display: flex;
+        grid-area: form;
+        justify-content: center;
+    }
+    .section_form img {
+       align-items: center;
+       justify-content: center;
+    
+    }
+
+
+.footer{
+    display: flex;
+    background-color: rgba(205, 255, 207, 0.851);
+    grid-area: footer;
+    justify-content: space-around;
+  
+    align-items: center;
+    }
+    .footer p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
