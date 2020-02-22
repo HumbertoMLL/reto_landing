@@ -8,39 +8,76 @@
     <link rel="stylesheet" href="/css/media-queries.css">
 </head>
 <body>
-   <section class="container">
-       <header class="header">
- 
-             <ul class="header__left-section">
-                     <img  class="header__left-section--logo" src="/assets/logo.png" alt="Logo">
-                 
-             </ul>
-             <ul class="header__right-section">
-                   <p class="header__right-section--inicio">Inicio </p>
-                 
-                 
-                   <img class="header__right-section--menu" src="/assets/menu.svg" alt="Menu">
-                
-             </ul>
-         
-       </header>
-       <section class="section">
-           <div class="section_services">
-             
-           </div>
-           <div class="section_form">
-               <img src="/assets/formulario.png" alt="">
-           </div>
-       </section>
-       <footer class="footer">
-           
-               <p>Hecho con amor por B-to</p>
-               <p>Terminos</p>
-               <p>Ayuda</p>
-        
+ <header class="header">
+     <item class="izquierdo"> 
+         <img class="header__logo" src="/assets/logo.png" alt="">
+        </item>
+        <item class="derecho">
+         <ul class="menu">
+            <li>
+                <a href="">Sucursales</a>
+            </li>
+            <li>
+                <a href="">Tienda</a>
+            </li>
+            <li>
+                <a href="">Comunidad</a>
+            </li> 
+        </ul>
+    </item>
+ </header>
+ <section class="section">
+     <div class="section__info">
+         <ul class="section__info--services">
+             <li>
+                 <p class="section__info--title">Equipo</p>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In cumque laudantium, eaque unde illo, eveniet repellat neque iusto voluptate sint doloribus.</p>
+             </li>
+            <li>
+                <p class="section__info--title">Mantenimiento</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In cumque laudantium, eaque unde illo, eveniet repellat neque iusto voluptate sint doloribus.</p>
+            </li>
+            <li>
+                <p class="section__info--title">Trueque de bicicletas</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In cumque laudantium, eaque unde illo, eveniet repellat neque iusto voluptate sint doloribus.</p>
+            </li>
+            <li>
+                <p class="section__info--title">Patrocinios</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In cumque laudantium, eaque unde illo, eveniet repellat neque iusto voluptate sint doloribus.</p>
+            </li>
+            
 
-       </footer>
+            
+         </ul>
+     </div>
 
-   </section>
+     <div class="section__form"> 
+      
+            <li class="nombre">
+              <label for="name">Nombre:</label>
+              <input type="text" class="section__form--input" name="user_name">
+            </li>
+            <li class="correo">
+              <label for="mail">Correo electrónico:</label>
+              <input type="email" class="section__form--input" name="user_mail">
+            </li>
+            <li class="tel">
+                <label for="tel">Número de telefono</label>
+                <input type="tel" class="section__form--input" name="user_tel" > 
+            </li>
+            <button class="button">Enviar</button>
+          
+          </form>
+     </div>
+ </section>
+ <footer class="footer">
+     <div class="footer__left">
+         <p>Hecho con amor desde Platzi Master</p>
+     </div>
+     <div class="footer___right">
+         <p class="footer__right--p">Terminos</p>
+         <p class="footer__right--p">Ayuda</p>
+     </div>
+ </footer>
 </body>
 </html>

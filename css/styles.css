@@ -1,99 +1,165 @@
-
+@import url('https://fonts.googleapis.com/css?family=Lacquer|Lato:300,400,900i&display=swap');
 body {
-    margin: 0;
     padding: 0;
-    }
-.container {
-       display: grid; 
-       height:100vh;
-       overflow: auto;
-       grid-template-rows: 94px 8fr 94px;
-       grid-template-areas: "header"
-                            "section"
-                            "footer";
-       align-self: center;
-    }
-
+    margin: 0;
+}
 .header {
-    margin-top: -24px;
-    height: 94px;
+    background-color:white;
+    width: 100%;
+    height: 10%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: white;
-    grid-area: header;
-    grid-template-areas: "left right";
-    align-self: center;
-    align-items: center;
-    }
-    .header__right-section {
-        height: 94px;
-        display: flex;
-        width:60px;
-        grid-area: right;
-        align-self: flex-end;
-        justify-self: flex-end;
-        align-items: center;
-      
-        margin-right: 72px;
-    }
-    .header__right-section--inicio {
-        padding: 0%;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        margin-left: 8px;
-    }
-    .header__right-section--menu {
-        padding: 0;
-        margin-right: 24px;
-        margin-left: 10px;
-        height: 40px;
-        width: 40px;
-    }
-    .header__left-section {
-        display: flex;
-        align-items: center;
-        height: 50px;
-        grid-area: left;
-    }
-    .header__left-section--logo{
-        padding: 0;
-        width: auto;
-        height: 94px;
-    }
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.izquierdo {
+    grid-column: 1;
+}
+.header__logo {
+    margin-left: 16px;
+    width: auto;
+    height: 80px;
+}
+.derecho {
+    grid-column: 3
+}
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    
+}
+.menu li{
+
+    list-style: none;
+    display: inline-block;
+
+}
+ .menu li a {
+     margin-left: 16px;
+     margin-right: 16px;
+     font-size: 24px;
+     font-family: 'Lato';
+     text-decoration: none;
+     color: black;
+ }
+.menu li a:hover {
+    color: rgba(206, 10, 10, 0.849);
+    
+}
 .section {
     display: grid;
-    background-color: rgba(0, 115, 255, 0.639);
-    grid-area: section;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "services form" ;
-    }
-    .section_services {
-       
-        background-image: url('https://i.pinimg.com/originals/2d/19/85/2d19853cfc3362a1b09b5cb907936d28.jpg');
-        grid-template-areas: services;
-     
-    }
-    .section_form {
-        display: flex;
-        grid-area: form;
-        justify-content: center;
-    }
-    .section_form img {
-       align-items: center;
-       justify-content: center;
-    
-    }
+    width: 100%;
+    height: 560px;
+    background-image: url('https://c.wallhere.com/photos/0a/02/cycling_blackwhite_action_motionblur_nik_rennrad_singen_radsport-901898.jpg!d');
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 104px;
+    grid-template-areas: "info  form"
+                          "info form";
+}
+.section__info {
+    display: grid;
+    grid-area: info;
+    grid-template-columns: 1fr 8fr 1fr;
 
-
-.footer{
-    display: flex;
-    background-color: rgba(205, 255, 207, 0.851);
-    grid-area: footer;
-    justify-content: space-around;
   
-    align-items: center;
-    }
-    .footer p {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 20px;
-    }
+}
+.section__info--services {
+    display: grid;
+    grid-column: 2;
+    padding-right: 24px;
+    padding-left: 24px;
+    justify-self: center;
+    background-color: rgba(255, 255, 255, 0.76);
+    color: rgba(206, 10, 10, 0.849);
+    border-radius: 8px;
+    width: 80%;
+    height: 90%;
+    font-size: 16px;
+    font-family: 'Lato';
+    text-align: justify;
+    list-style: none;
+} 
+.section__info--title {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+.section__info--services li {
+   
+    width: 100%;
+    height: 20%;
+  
+    text-decoration: none;
+
+}
+.section__form {
+    display: grid;
+    grid-template-columns: 56px 1fr 56px;
+    grid-template-rows: 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+    grid-area: form;
+   
+}
+.section__form li {
+    
+    justify-self: center;
+    list-style: none;
+}
+.section__form li label {
+    
+    border-radius: 2px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.76);
+    color: rgba(206, 10, 10, 0.849);
+
+}
+.section__form--input {
+    border-radius: 10px;
+
+}
+.nombre {
+    grid-column: 2;
+    grid-row: 2;
+}
+.correo{
+    grid-column: 2;
+    grid-row: 4;
+}
+.tel {
+    grid-column: 2;
+    grid-row:6;
+}
+.button{
+    grid-column: 2;
+    grid-row:8;
+    border-radius: 8px;
+    width: 100%;
+    height: 48px;
+}
+.footer {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footer__left{
+
+    grid-column: 1;
+}
+.footer__left p {
+    font-family: 'Lato';
+    font-size: 16px;
+    margin-left: 16px;
+}
+.footer___right {
+    margin-right: 24px;
+    
+    justify-self: flex-end;
+    grid-column: 2;
+    display: flex;
+}
+.footer__right--p {
+    font-family: 'Lato';
+    font-size: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: inline-block;
+}
