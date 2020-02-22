@@ -1,3 +1,13 @@
 @media (max-width: 900px)
  {
+     .section {
+         display: grid;
+         grid-template-rows: 1fr 1fr;
+     }
+     .section__services {
+         grid-row: 1;
+     }
+     .section__form {
+         grid-row: 2;
+     }
  }
