@@ -1,13 +1,16 @@
-@media (max-width: 900px)
+@media screen and (max-width: 900px)
  {
      .section {
          display: grid;
+         grid-template-columns:  1fr 1fr;
          grid-template-rows: 1fr 1fr;
+         grid-template-areas: "services services"
+                              "form form";
      }
      .section__services {
-         grid-row: 1;
+         grid-area: services;
      }
      .section__form {
-         grid-row: 2;
+         grid-area: form;
      }
  }
