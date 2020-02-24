@@ -6,6 +6,7 @@ Hay 2 tipos de archivos .css y .html ya que son las únicas tecnologías con las
 ## Seciones
 
 Es una landing page con 2 secciones una de información y otra de ubicación 
+En el header cuando esta en estado *hover* las letras cambian de color 
 En información use una imagen como fondo 
 
 ## 
