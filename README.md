@@ -1,13 +1,12 @@
-# Reto_landing
-# Archivos
+# Landing page responsive 
+ This page simulate are landing page of bicicle store, in this landing you can put your dates of contact, you can see general information about services and direction of store
+# Files
+This landing use two technologys CSS and HTML, in CSS use BEM metodhology 
 
-Hay 2 tipos de archivos .css y .html ya que son las únicas tecnologías con las que está hecho, se usa css grid y BEM 
+## Sections
 
-## Seciones
-
-Es una landing page con 2 secciones una de información y otra de ubicación 
-En el header cuando esta en estado *hover* las letras cambian de color 
-En información use una imagen como fondo 
+Is a landing page with two sections, the first is about services and form, the second is about where is ubicate the store
+In state *Hover* the letters in the header change color  
 
 ## 
  ![Vista](/assets/vista1.png "Vista")
